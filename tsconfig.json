@@ -14,7 +14,7 @@
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "baseUrl": "src",
-    "types": ["element-plus/global"],
+
     "paths": {
       "@/*": ["*"],
       "@components/*": ["components/*"],

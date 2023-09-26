@@ -9,13 +9,11 @@ declare module 'vue' {
   export interface GlobalComponents {
     HomeContact: typeof import('./src/components/home/HomeContact.vue')['default']
     HomeDownload: typeof import('./src/components/home/HomeDownload.vue')['default']
-    HomeGHospital: typeof import('./src/components/home/HomeGHospital.vue')['default']
     HomeHospital: typeof import('./src/components/home/HomeHospital.vue')['default']
     HomeIntro: typeof import('./src/components/home/HomeIntro.vue')['default']
     HomeNews: typeof import('./src/components/home/HomeNews.vue')['default']
     HomeRecruiting: typeof import('./src/components/home/HomeRecruiting.vue')['default']
     HomeTeam: typeof import('./src/components/home/HomeTeam.vue')['default']
-    Layout: typeof import('./src/components/Layout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheBanner: typeof import('./src/components/TheBanner.vue')['default']

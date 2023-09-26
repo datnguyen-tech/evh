@@ -8,7 +8,7 @@
       </div>
       <div class="content flex md:hidden">
         <div class="left flex flex-col items-center [h-253px] pr-[72px] border-r border-solid border-[#C4C4C4]">
-          <img loading="lazy" src="images/logo.png" alt="" class="logo" />
+          <img loading="lazy" src="/images/logo.png" alt="" class="logo" />
           <img loading="lazy" src="/images/company-name.png" alt="" class="block mt-[35px]" />
           <div class="flex items-center justify-between space-x-[27px] mt-4">
             <img loading="lazy" src="/images/Insta.png" alt="" />
