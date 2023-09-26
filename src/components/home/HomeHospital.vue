@@ -1,8 +1,14 @@
 <template>
   <div class="mt-[100px] container md:mt-[50px]">
     <p class="text-[40px] leading-none font-semibold text-menu md:text-4xl md:text-center">Hệ Thống Bệnh Viện Triển Khai</p>
-    <div class="mt-[50px] relative md:mt-[45px]">
-      <swiper-container id="swiper-container" ref="swiperRef" :slides-per-view="slidePerView" space-between="10">
+    <div class="mt-[50px] relative md:mt-[45px] carousel">
+      <swiper-container
+        id="swiper-container"
+        ref="swiperRef"
+        :pagination="isMobile"
+        :slides-per-view="slidePerView"
+        space-between="10"
+      >
         <swiper-slide>
           <img
             loading="lazy"
@@ -66,13 +72,17 @@
   const isBeginElement = ref(true)
   const isEndElement = ref(false)
   const slidePerView = ref(3)
+  const isMobile = ref(false)
 
   onMounted(() => {
     if (window.innerWidth < 768 || window.outerWidth < 768) {
       slidePerView.value = 1.2
+      isMobile.value = true
     }
     nextTick(() => {
       swiperRef.value.addEventListener('slidechange', () => {
+        console.log(swiperRef.value?.swiper)
+
         isBeginElement.value = swiperRef.value?.swiper.isBeginning || false
         isEndElement.value = swiperRef.value?.swiper.isEnd || false
       })
@@ -86,4 +96,16 @@
   }
 </script>
 
-<style scoped></style>
+<style>
+  swiper-container::part(bullet-active) {
+    background-color: #6a6a6a;
+  }
+</style>
+
+<style scoped>
+  #swiper-container {
+    @media screen and (max-width: 767px) {
+      height: 312px;
+    }
+  }
+</style>

@@ -2,7 +2,13 @@
   <div class="mt-[100px] pb-[38px] container md:mt-[50px]">
     <p class="text-center text-5xl font-semibold text-menu md:text-4xl">Đội Ngũ Chuyên Gia</p>
     <div class="mt-[50px] relative">
-      <swiper-container id="swiper-container" ref="swiperRef" :slides-per-view="slidePerView" space-between="30">
+      <swiper-container
+        id="swiper-container"
+        ref="swiperRef"
+        :pagination="isMobile"
+        :slides-per-view="slidePerView"
+        space-between="30"
+      >
         <swiper-slide>
           <div class="box">
             <img loading="lazy" src="/images/team.png" alt="hospital image" class="h-[525px] object-cover block" />
@@ -76,10 +82,12 @@
   const isBeginElement = ref(true)
   const isEndElement = ref(false)
   const slidePerView = ref(3)
+  const isMobile = ref(false)
 
   onMounted(() => {
     if (window.innerWidth < 768 || window.outerWidth < 768) {
       slidePerView.value = 1
+      isMobile.value = true
     }
     nextTick(() => {
       swiperRef.value.addEventListener('slidechange', () => {
@@ -111,5 +119,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  #swiper-container {
+    @media screen and (max-width: 767px) {
+      height: 650px;
+    }
   }
 </style>
