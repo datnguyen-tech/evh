@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVH</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/taildwind.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="menu container flex items-center md:max-w-none">
+        <img loading="lazy" src="images/logo.png" alt="logo evh" class="w-[67px] md:w-[41px]" />
+        <span class="text-menu text-[50px] font-bold ml-[10px] cursor-pointer md:hidden">EVH</span>
+        <div class="space-x-[37px] text-menu font-semibold text-lg ml-[153px] md:hidden">
+            <a href="index.html">Trang Chủ</a>
+            <a href="#service">Dịch Vụ</a>
+            <a href="#team">Đội ngũ</a>
+            <a href="#news">Tin Tức</a>
+            <a href="#recruiting">Tuyển dụng</a>
+        </div>
+        <div
+            class="btn w-[184px] h-[55px] bg-menu text-white rounded-[72px] flex items-center justify-center ml-auto md:hidden">
+            <img loading="lazy" src="images/download.png" alt="icon download" />
+            <span class="pl-2">Download</span>
+        </div>
+
+        <!-- mobile menu -->
+        <div
+            class="w-[35px] h-[35px] bg-black p-2 space-y-1 flex justify-center flex-col ml-auto invisible md:visible menu-bugger">
+            <div class="bg-white h-0.5 w-full"></div>
+            <div class="bg-white h-0.5 w-full"></div>
+            <div class="bg-white h-0.5 w-full"></div>
+        </div>
+
+        <div class="hidden menu-mobile">
+            <div class="icon menu-item-mb">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.25 14.75L23.875 6.875L22.625 5.625L15 13.375L7.375 5.625L6.125 6.875L13.75 14.75L5.625 23.125L6.875 24.375L15 16.125L23.125 24.375L24.375 23.125L16.25 14.75Z"
+                        fill="black" />
+                </svg>
+            </div>
+
+            <a href="index.html" class="menu-item-mb">Trang Chủ</a>
+            <a href="#service" class="menu-item-mb">Dịch Vụ</a>
+            <a href="#team" class="menu-item-mb">Đội ngũ</a>
+            <a href="#news" class="menu-item-mb">Tin Tức</a>
+            <a href="#recruiting" class="menu-item-mb">Tuyển dụng</a>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section class="mt-[55px] pl-[150px] pt-[147px] text-white relative container banner md:px-[31px] md:pt-[33px]">
+        <div class="max-w-[462px] md:max-w-none">
+            <span class="text-[46px] leading-[64px] font-semibold md:text-[36px] md:leading-[50px]">Đặt Lịch Hẹn Khám
+                bệnh Nhanh Chóng
+            </span>
+            <p class="mt-[17px] text-xl leading-[30px] md:text-sm">
+                EVH là một ứng dụng về chăm sóc sức khỏe bao gồm: Đặt lịch hẹn, tìm kiếm phòng khám, cập nhật tin tức
+                mới nhất về y tế…
+                ngay trên thiết bị di động.
+                <br />
+                Giúp người bệnh dễ dàng tìm được cơ sở khám chữa bệnh.
+            </p>
+        </div>
+        <div class="mt-[26px] md:hidden">
+            <span class="text-xl font-semibold"> Tải Ứng Dụng Tại Đây </span>
+            <div class="space-x-[13px] mt-[17px] flex cursor-pointer">
+                <img src="images/appstore.png" alt="" />
+                <img src="images/gg-play.png" alt="" />
+            </div>
+        </div>
+        <div class="mt-[181px] space-y-[15px] hidden md:block">
+            <div class="action text-[10px] px-0.5 py-1 border border-solid border-[#0E43A6] rounded-md w-fit">D O W N L
+                O A D</div>
+            <img src="images/appstore.png" alt="" class="w-[119px]" />
+            <img src="images/gg-play.png" alt="" class="w-[119px]" />
+        </div>
+        <img src="images/mockup-phone.png" alt="mockup phone" class="absolute bottom-0 right-[105px] md:hidden" />
+        <img src="images/mockup-phone-mb.png" alt="mockup phone" class="absolute bottom-0 right-0 hidden md:block" />
+    </section>
+
+    <!-- intro -->
+    <section id="service" class="container home-intro">
+        <div class="mt-[100px] text-center max-w-[871px] mx-auto md:mt-2 md:max-w-none">
+            <span class="text-5xl leading-none text-menu font-semibold md:text-4xl">Giới Thiệu EVH- Đặt lịch khám
+                bệnh</span>
+            <p class="text-xl leading-[30px] mt-[19px] text-center md:mt-[30px] md:text-sm">
+                EVH là giải pháp đặt lịch khám bệnh, chăm sóc sức khỏe trực tuyến cho cả gia đình. Người dùng chủ động
+                trong việc khám
+                chữa bệnh, được lựa chọn dịch vụ, chuyên khoa, bác sĩ tại các bệnh viện và phòng khám hàng đầu Việt Nam
+                như Bệnh viện Đại
+                học Y Dược TP.HCM, Bệnh viện Chợ Rẫy, Bệnh viện Nhi Đồng Thành Phố.
+            </p>
+        </div>
+        <div
+            class="grid grid-cols-3 gap-[37px] mt-[100px] max-w-[1181px] mx-auto md:mt-[50px] md:max-w-none md:grid-cols-1 md:gap-[50px]">
+            <div class="box">
+                <img loading="lazy" src="images/intro-1.png" alt="intro 1" />
+                <p class="text-3xl font-semibold mt-[28px] md:text-[26px] md:mt-[25px]">Đặt Lịch nhanh chóng</p>
+                <p class="mt-[15px] text-base md:text-sm md:mt-[13px]">
+                    Bệnh nhân có thể chủ động tìm kím bệnh viện và đặt lịch khám nhanh chóng (ngày khám và giờ khám)
+                </p>
+            </div>
+            <div class="box">
+                <img loading="lazy" src="images/intro-2.png" alt="intro 1" />
+                <p class="text-3xl font-semibold mt-[28px]">Thanh toán dễ dàng</p>
+                <p class="mt-[15px] text-base">Người dùng có thể chọn và thanh toán trực tiếp trên phần mềm</p>
+            </div>
+            <div class="box">
+                <img loading="lazy" src="images/intro-3.png" alt="intro 1" />
+                <p class="text-3xl font-semibold mt-[28px]">Nhận phiếu trực tuyến</p>
+                <p class="mt-[15px] text-base">Bệnh nhân nhận phiếu khám trực tuyến tại trên phần mềm</p>
+            </div>
+        </div>
+        <p class="mt-[54px] text-[25px] text-center md:text-sm md:mt-[30px]">
+            Tìm hiểu về quy trình <span class="text-menu">Đăng ký khám bệnh</span>
+        </p>
+    </section>
+
+    <!-- download -->
+    <section class="mt-[100px] container md:mt-[27px]">
+        <p class="text-5xl leading-none font-semibold text-center md:text-4xl">Tải Ứng Dụng <span
+                class="text-menu">EVH</span></p>
+        <img loading="lazy" src="images/home-download.png" alt="Tải Ứng Dụng EVH" class="mt-[70px] md:hidden" />
+        <div class="flex mt-[30px] space-x-[42px] justify-center md:mt-5">
+            <img loading="lazy" src="images/appstore.png" alt="download app" />
+            <img loading="lazy" src="images/gg-play.png" alt="download app" />
+        </div>
+        <div
+            class="text-[10px] px-0.5 py-1 border border-solid border-[#0E43A6] text-menu rounded-md w-fit mt-5 mx-auto hidden md:block">
+            D O W N L O A D
+        </div>
+        <img loading="lazy" src="images/mockup-phone-mb.png" alt="mockup phone" class="hidden mx-auto mt-5 md:block" />
+    </section>
+
+    <!-- home hospital -->
+    <section class="mt-[100px] container md:mt-[50px]">
+        <p class="text-[40px] leading-none font-semibold text-menu md:text-4xl md:text-center">Hệ Thống Bệnh Viện Triển
+            Khai</p>
+        <div class="mt-[50px] relative md:mt-[45px] carousel">
+            <swiper-container id="swiper-container-hos" space-between="10">
+                <swiper-slide>
+                    <img loading="lazy" src="images/hos-1.png" alt="hospital image"
+                        class="h-[288px] object-cover block w-full md:h-[220px]" />
+                    <p class="mt-5 text-[28px] font-semibold text-menu md:text-[21px]">Bệnh Viện An Việt</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img loading="lazy" src="images/hos-2.png" alt="hospital image"
+                        class="h-[288px] object-cover block w-full md:h-[220px]" />
+                    <p class="mt-5 text-[28px] font-semibold text-menu md:text-[21px]">Bệnh Viện Nhi Đồng 1</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img loading="lazy" src="images/hos-1.png" alt="hospital image"
+                        class="h-[288px] object-cover block w-full md:h-[220px]" />
+                    <p class="mt-5 text-[28px] font-semibold text-menu md:text-[21px]">Bệnh Viện Bình Thạnh</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img loading="lazy" src="images/hos-2.png" alt="hospital image"
+                        class="h-[288px] object-cover block w-full md:h-[220px]" />
+                    <p class="mt-5 text-[28px] font-semibold text-menu md:text-[21px]">Bệnh Viện Bình Thạnh</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <img loading="lazy" src="images/hos-1.png" alt="hospital image"
+                        class="h-[288px] object-cover block w-full md:h-[220px]" />
+                    <p class="mt-5 text-[28px] font-semibold text-menu md:text-[21px]">Bệnh Viện Bình Thạnh</p>
+                </swiper-slide>
+            </swiper-container>
+            <div class="flex justify-between absolute z-10 top-[114px] w-full md:hidden">
+                <img loading="lazy" src="images/arrow.png" alt="arrow" class="cursor-pointer"
+                    onclick="nextSwiper('left')" />
+                <img loading="lazy" src="images/arrow.png" alt="arrow" class="rotate-180 cursor-pointer"
+                    onclick="nextSwiper('right')" />
+            </div>
+        </div>
+    </section>
+
+    <!-- team -->
+    <section id="team" class="mt-[100px] pb-[38px] container team md:mt-[50px]">
+        <p class="text-center text-5xl font-semibold text-menu md:text-4xl">Đội Ngũ Chuyên Gia</p>
+        <div class="mt-[50px] relative">
+            <swiper-container id="swiper-container-team" space-between="30">
+                <swiper-slide>
+                    <div class="box">
+                        <img loading="lazy" src="images/team.png" alt="hospital image"
+                            class="h-[525px] object-cover block" />
+                    </div>
+                    <p class="mt-4 text-4xl leading-none font-semibold text-[#4A8AC5] text-center md:text-2xl">Họ & Tên
+                    </p>
+                    <p class="mt-4 text-[25px] text-center md:text-base">Chức Vụ</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="box">
+                        <img loading="lazy" src="images/team.png" alt="hospital image"
+                            class="h-[525px] object-cover block" />
+                    </div>
+                    <p class="mt-4 text-4xl leading-none font-semibold text-[#4A8AC5] text-center md:text-2xl">Họ & Tên
+                    </p>
+                    <p class="mt-4 text-[25px] text-center md:text-base">Chức Vụ</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="box">
+                        <img loading="lazy" src="images/team.png" alt="hospital image"
+                            class="h-[525px] object-cover block" />
+                    </div>
+                    <p class="mt-4 text-4xl leading-none font-semibold text-[#4A8AC5] text-center md:text-2xl">Họ & Tên
+                    </p>
+                    <p class="mt-4 text-[25px] text-center md:text-base">Chức Vụ</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="box">
+                        <img loading="lazy" src="images/team.png" alt="hospital image"
+                            class="h-[525px] object-cover block" />
+                    </div>
+                    <p class="mt-4 text-4xl leading-none font-semibold text-[#4A8AC5] text-center md:text-2xl">Họ & Tên
+                    </p>
+                    <p class="mt-4 text-[25px] text-center md:text-base">Chức Vụ</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="box">
+                        <img loading="lazy" src="images/team.png" alt="hospital image"
+                            class="h-[525px] object-cover block" />
+                    </div>
+                    <p class="mt-4 text-4xl leading-none font-semibold text-[#4A8AC5] text-center md:text-2xl">Họ & Tên
+                    </p>
+                    <p class="mt-4 text-[25px] text-center md:text-base">Chức Vụ</p>
+                </swiper-slide>
+            </swiper-container>
+            <div class="flex justify-between absolute z-10 top-[200px] w-full md:hidden">
+                <div class="arrow cursor-pointer" onclick="nextSwiperTeam('left')">
+                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8507 27L2.90051 15L14.8507 3" stroke="#fff" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="rotate-180 cursor-pointer arrow" onclick="nextSwiperTeam('right')">
+                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8507 27L2.90051 15L14.8507 3" stroke="#fff" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news -->
+
+    <section id="news" class="mt-[100px] container home-news md:mt-[50px]">
+        <div class="flex items-center justify-between md:flex-col md:items-stretch">
+            <p class="text-[40px] font-semibold text-menu md:text-4xl">Bài Viết Mới Nhất</p>
+            <a class="read-more px-[27px] py-[9px] text-center text-menu mt-[20px] cursor-pointer md:px-3 md:py-1 md:w-fit"
+                href="news.html">
+                Xem thêm
+            </a>
+
+        </div>
+
+
+        <div class="grid grid-cols-3 grid-rows-2 gap-2 mt-10 md:hidden">
+            <a class="col cursor-pointer col-span-2 flex" href="detailnews.html">
+                <div class="mr-6">
+                    <p class="text-[28px] font-semibold line-clamp-3 text-menu">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+                    <p class="my-[10px] text-[13px]">20/2/2022</p>
+                    <p class="text-xl line-clamp-5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+                </div>
+                <img loading="lazy"
+                    src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                    alt="" class="block object-cover h-[300px] rounded-[40px]" />
+            </a>
+            <a class="col cursor-pointer col-start-3" href="detailnews.html">
+                <div class="mr-6">
+                    <p class="text-[28px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+
+                    <p class="line-clamp-2 text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+                </div>
+                <img loading="lazy"
+                    src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                    alt="" class="block object-cover  rounded-[40px] mt-[10px] h-[243px]" />
+            </a>
+            <a class="col cursor-pointer row-start-2" href="detailnews.html">
+                <div class="mr-6">
+                    <p class="text-[28px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+
+                    <p class="line-clamp-2 text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+                </div>
+                <img loading="lazy"
+                    src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                    alt="" class="block object-cover  rounded-[40px] mt-[10px] !h-[243px]" />
+            </a>
+            <a class="col cursor-pointer row-start-2" href="detailnews.html">
+                <div class="mr-6">
+                    <p class="text-[28px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+
+                    <p class="line-clamp-2 text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+                </div>
+                <img loading="lazy"
+                    src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                    alt="" class="block object-cover  rounded-[40px] mt-[10px] !h-[243px]" />
+            </a>
+            <a class="col cursor-pointer row-start-2" href="detailnews.html">
+                <div class="mr-6">
+                    <p class="text-[28px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+
+                    <p class="line-clamp-2 text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+                </div>
+                <img loading="lazy"
+                    src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                    alt="" class="block object-cover  rounded-[40px] mt-[10px] !h-[243px]" />
+            </a>
+        </div>
+        <swiper-container id="swiper-container" ref="swiperRef" class="hidden mt-4 md:block" slides-per-view="1.06"
+            space-between="12">
+            <swiper-slide>
+                <div class="col" @click="$router.push({ name: 'DetailNews', params: { id: 1 } })">
+                    <p class="text-[24px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+                    <p class="line-clamp-2 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+
+                    <img loading="lazy"
+                        src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                        alt="" class="block object-cover rounded-[34px] mt-2 h-[209px]" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="col" @click="$router.push({ name: 'DetailNews', params: { id: 1 } })">
+                    <p class="text-[24px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+                    <p class="line-clamp-2 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+
+                    <img loading="lazy"
+                        src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                        alt="" class="block object-cover rounded-[34px] mt-2 h-[209px]" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="col" @click="$router.push({ name: 'DetailNews', params: { id: 1 } })">
+                    <p class="text-[24px] font-semibold text-menu line-clamp-1">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+                    <p class="line-clamp-2 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+
+                    <img loading="lazy"
+                        src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                        alt="" class="block object-cover rounded-[34px] mt-2 h-[209px]" />
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </section>
+
+    <!-- recruiting -->
+    <section id="recruiting"
+        class="mt-[100px] container md:mt-[50px] home-recruiting pb-[53px] pr-[20px] pt-[30px] pl-[40px] md:max-w-none md:bg-cover">
+        <!-- <img loading="lazy" src="images/banner-recruiting.png" alt="Tuyen dung" class="md:hidden" />
+        <img loading="lazy" src="images/banner-recuriting-mb.png" alt="Tuyen dung" class="hidden w-full md:block" /> -->
+        <p class=" text-5xl font-semibold mt-[120px] text-white md:mt-0 md:text-[30px]">Thông Tin Tuyển Dụng</p>
+        <ul
+            class="mt-[20px] text-base leading-[22px] max-w-[350px] text-white pl-6 md:mt-3 md:text-sm  md:max-w-[208px]">
+            <li class="list-disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li class="list-disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li class="list-disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li class="list-disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+        </ul>
+        <div
+            class="mt-[30px] w-fit py-[6px] px-[20px] text-menu font-semibold text-[24px] cursor-pointer rounded-[30px] bg-white md:mt-3 md:text-[16px] md:py-1 md:px-3">
+            Ứng Tuyển Ngay</div>
+        <div
+            class="w-[331px] flex items-center h-[49px] rounded-[30px]  recruiting-email md:!left-[30px] md:!bottom-[138px]">
+            <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4.15625 4.125L12.6818 9.94174C13.174 10.2776 13.826 10.2776 14.3182 9.94174L22.8438 4.125M4.875 19H22.125C23.7128 19 25 17.7315 25 16.1667V4.83333C25 3.26853 23.7128 2 22.125 2H4.875C3.28718 2 2 3.26853 2 4.83333V16.1667C2 17.7315 3.28718 19 4.875 19Z"
+                    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-white text-[16px] pl-3 md:text-[14px]">hrmail@EVHCompany.com</span>
+
+        </div>
+        <div
+            class="w-[276px] h-[93px] flex items-center rounded-[30px] recruiting-phone md:bottom-[89px] md:left-[30px] md:h-[59px] md:w-[211px]">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="md:hidden">
+                <path
+                    d="M32.6395 29.201C32.6395 29.201 30.6147 31.1676 30.1185 31.7442C29.3102 32.5972 28.3578 33 27.1093 33C26.9893 33 26.8612 33 26.7412 32.9921C24.3642 32.842 22.1553 31.9259 20.4987 31.1439C15.9689 28.9799 11.9913 25.9075 8.68595 22.0138C5.95686 18.7676 4.13213 15.7664 2.92364 12.5439C2.17934 10.5773 1.90723 9.04509 2.02728 7.59974C2.10731 6.67567 2.46746 5.90955 3.13172 5.25401L5.86082 2.56076C6.25297 2.19745 6.66914 2 7.0773 2C7.58151 2 7.98967 2.30013 8.24577 2.55287C8.25378 2.56076 8.26178 2.56866 8.26978 2.57656C8.75798 3.02675 9.22216 3.49274 9.71036 3.99032C9.95846 4.24306 10.2146 4.4958 10.4707 4.75643L12.6555 6.91261C13.5039 7.74981 13.5039 8.52382 12.6555 9.36102C12.4234 9.59006 12.1994 9.81911 11.9673 10.0403C11.295 10.7195 11.8231 10.1983 11.1268 10.8144C11.1108 10.8302 11.0948 10.8381 11.0868 10.8539C10.3985 11.5331 10.5266 12.1965 10.6706 12.6467C10.6786 12.6704 10.6866 12.6941 10.6946 12.7178C11.2629 14.0763 12.0632 15.3558 13.2797 16.8801L13.2877 16.888C15.4966 19.5733 17.8255 21.6663 20.3945 23.2697C20.7227 23.475 21.0588 23.6409 21.3789 23.7988C21.667 23.941 21.9392 24.0753 22.1712 24.2174C22.2033 24.2332 22.2353 24.2569 22.2673 24.2727C22.5394 24.407 22.7955 24.4702 23.0596 24.4702C23.7239 24.4702 24.14 24.0595 24.2761 23.9252L25.8448 22.3771C26.1169 22.1085 26.5491 21.7847 27.0533 21.7847C27.5495 21.7847 27.9577 22.0927 28.2058 22.3613C28.2138 22.3692 28.2138 22.3692 28.2218 22.3771L32.6315 26.7289C33.4559 27.5345 32.6395 29.201 32.6395 29.201Z"
+                    stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+                class="hidden md:block">
+                <path
+                    d="M20.9326 18.6938C20.9326 18.6938 19.6481 19.9415 19.3333 20.3072C18.8205 20.8484 18.2163 21.1039 17.4242 21.1039C17.348 21.1039 17.2668 21.1039 17.1906 21.0989C15.6827 21.0037 14.2814 20.4225 13.2304 19.9264C10.3566 18.5535 7.83318 16.6044 5.73625 14.1342C4.00489 12.0748 2.84727 10.1708 2.08059 8.12643C1.60841 6.87878 1.43578 5.90672 1.51194 4.98978C1.56271 4.40354 1.79119 3.91751 2.2126 3.50163L3.94396 1.79301C4.19275 1.56252 4.45677 1.43726 4.71571 1.43726C5.03558 1.43726 5.29453 1.62766 5.457 1.788C5.46208 1.79301 5.46716 1.79802 5.47223 1.80303C5.78195 2.08864 6.07643 2.38426 6.38615 2.69993C6.54354 2.86027 6.70602 3.02061 6.86849 3.18596L8.2546 4.55386C8.79279 5.08498 8.79279 5.57602 8.2546 6.10715C8.10735 6.25246 7.96519 6.39776 7.81795 6.53806C7.39145 6.96897 7.72649 6.63834 7.28476 7.02917C7.27461 7.03919 7.26445 7.0442 7.25938 7.05422C6.82273 7.48513 6.90397 7.90602 6.99536 8.19163C7.00043 8.20666 7.00551 8.22169 7.01059 8.23673C7.37108 9.09855 7.87881 9.91027 8.65056 10.8773L8.65564 10.8823C10.057 12.5859 11.5345 13.9138 13.1643 14.9309C13.3724 15.0612 13.5857 15.1664 13.7888 15.2666C13.9716 15.3568 14.1442 15.442 14.2914 15.5322C14.3117 15.5422 14.3321 15.5572 14.3524 15.5673C14.525 15.6524 14.6875 15.6925 14.855 15.6925C15.2764 15.6925 15.5405 15.432 15.6268 15.3468L16.622 14.3646C16.7946 14.1943 17.0688 13.9888 17.3887 13.9888C17.7035 13.9888 17.9624 14.1843 18.1198 14.3546C18.1249 14.3596 18.1249 14.3596 18.13 14.3646L20.9275 17.1255C21.4505 17.6366 20.9326 18.6938 20.9326 18.6938Z"
+                    stroke="white" stroke-width="2.53763" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-white text-[28px] font-semibold pl-3 md:text-[18px]">1900 955 535</span>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class=" mt-[100px] container home-contact md:mt-[50px]">
+        <p class="text-center text-5xl font-semibold text-menu md:text-4xl">Liên hệ</p>
+        <div
+            class="w-[1000px] mx-auto grid grid-cols-4 gap-5 mt-[50px] md:grid-cols-2 md:gap-y-[31px] ms:gap-x-[18px] md:w-full">
+            <div class="box">
+                <img loading="lazy" src="images/hotline.png" alt="" />
+                <p class="mt-4 text-menu text-lg leading-none font-semibold md:text-[12px]">HOTLINE</p>
+                <p class="text-sm text-menu mt-[11px] md:text-[9px] md:leading-3">1900 955 535</p>
+            </div>
+            <div class="box">
+                <img loading="lazy" src="images/address.png" alt="" />
+                <p class="mt-4 text-menu text-lg leading-none font-semibold md:text-[12px]">ĐỊA CHỈ</p>
+                <p class="text-sm text-menu mt-[11px] md:text-[9px] md:leading-3">
+                    Tầng 10, Tòa nhà Việt Á, Số 9 Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội
+                </p>
+            </div>
+            <div class="box">
+                <img loading="lazy" src="images/email.png" alt="" />
+                <p class="mt-6 text-menu text-lg leading-none font-semibold md:text-[12px] md:mt-4">MAIL</p>
+                <p class="text-sm text-menu mt-[11px] md:text-[9px] md:leading-3">mail@Evh.com</p>
+            </div>
+            <div class="box">
+                <img loading="lazy" src="images/time.png" alt="" />
+                <p class="mt-4 text-menu text-lg leading-none font-semibold md:text-[12px]">THỜI GIAN LÀM VIỆC
+                </p>
+                <p class="text-sm text-menu mt-[11px] md:text-[9px] md:leading-3">Thời gian làm việc từ thứ 2
+                    đến thứ 7
+                    7:30 - 16:30</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-[170px] relative footer">
+        <div class="inner">
+            <div class="contact">
+                <span class="text-white text-[40px] font-semibold md:hidden">Liên Hệ Chúng tôi</span>
+                <input v-model="text" type="text" class="input" placeholder="Enter your email" />
+                <div
+                    class="ml-auto uppercase text-white text-[18px] flex items-center justify-center cursor-pointer btn">
+                    Subscribe</div>
+            </div>
+            <div class="content flex md:hidden">
+                <div class="left flex flex-col items-center [h-253px] pr-[72px] border-r border-solid border-[#C4C4C4]">
+                    <img loading="lazy" src="images/logo.png" alt="" class="logo" />
+                    <img loading="lazy" src="images/company-name.png" alt="" class="block mt-[35px]" />
+                    <div class="flex items-center justify-between space-x-[27px] mt-4">
+                        <img loading="lazy" src="images/Insta.png" alt="" />
+                        <img loading="lazy" src="images/Fb.png" alt="" />
+                        <img loading="lazy" src="images/Twiter.png" alt="" />
+                        <img loading="lazy" src="images/In.png" alt="" />
+                        <img loading="lazy" src="images/Youtube.png" alt="" />
+                    </div>
+                </div>
+                <div class="pl-5 flex-1">
+                    <span class="text-menu font-medium text-[30px]">Menu</span>
+                    <div class="flex mt-2">
+                        <ul class="text-xl leading-[40px]">
+                            <li>Trang Chủ</li>
+                            <li>Dịch Vụ</li>
+                            <li>Đội Ngũ</li>
+                            <li>Tin Tức</li>
+                            <li>Tuyển Dụng <span
+                                    class="text-base px-3 bg-[#39AFBA] rounded-[15px] text-white">Offer</span></li>
+                        </ul>
+                        <ul class="ml-[29px] text-xl leading-[40px]">
+                            <li>Liên hệ</li>
+                            <li>Điều khoản dịch vụ</li>
+                            <li>Chính sách bảo mật</li>
+                            <li>Quy định sử dụng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pl-[57px] w-[331px]">
+                    <span class="text-menu font-medium text-[30px]">Address</span>
+                    <p class="text-xl leading-[40px]">
+                        Tầng 10, Tòa nhà Việt Á, Số 9 Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội
+                    </p>
+                    <p class="text-xl leading-[40px]">hotline: 1900 955535</p>
+                    <p class="text-xl leading-[40px]">mail@primpay.com</p>
+                </div>
+            </div>
+            <div class="mt-[26px] flex justify-end space-x-[42px] md:hidden">
+                <img loading="lazy" src="images/appstore.png" alt="" />
+                <img loading="lazy" src="images/gg-play.png" alt="" />
+            </div>
+        </div>
+        <div class="h-[77px] bg-white flex items-center justify-center md:hidden">
+            EVH Medical Technology © Bảng Quyền thuộc sở hữu của EVH
+        </div>
+
+        <!-- footer mb -->
+        <div class="pt-[100px] text-white pl-[31px] pr-[38px] hidden md:block">
+            <span class="text-2xl leading-3 font-semibold">Menu</span>
+            <div class="mt-1">
+                <ul class="text-base leading-[32px]">
+                    <li>Trang Chủ</li>
+                    <li>Dịch Vụ</li>
+                    <li>Đội Ngũ</li>
+                    <li>Tin Tức</li>
+                    <li>Tuyển Dụng <span class="text-sm px-3 bg-[#39AFBA] rounded-[15px] text-white">Offer</span></li>
+                </ul>
+                <ul class="base leading-[32px] mt-4">
+                    <li>Liên hệ</li>
+                    <li>Điều khoản dịch vụ</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Quy định sử dụng</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <span class="text-2xl leading-3 font-semibold">Address</span>
+                <div class="mt-1">
+                    <p class="text-base leading-8">
+                        Tầng 10, Tòa nhà Việt Á, Số 9 Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội
+                        <br />
+                        Hotline: 1900 955535
+                        <br />
+                        mail@primpay.com
+                    </p>
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center items-center space-x-[50px]">
+                <img loading="lazy" src="images/appstore.png" alt="" class="w-[120px]" />
+                <img loading="lazy" src="images/gg-play.png" alt="" class="w-[120px]" />
+            </div>
+            <div class="mt-10 flex flex-col justify-center items-center">
+                <img loading="lazy" src="images/logo.png" alt="" class="w-[65px]" />
+                <img loading="lazy" src="images/company-name-mb.png" alt="" class="block mt-[18px]" />
+                <div class="flex items-center justify-between space-x-[14px] mt-3">
+                    <img loading="lazy" src="images/Insta-mb.png" alt="" />
+                    <img loading="lazy" src="images/Fb-mb.png" alt="" />
+                    <img loading="lazy" src="images/Twiter-mb.png" alt="" />
+                    <img loading="lazy" src="images/In-mb.png" alt="" />
+                    <img loading="lazy" src="images/Youtube-mb.png" alt="" />
+                </div>
+            </div>
+            <div class="mt-[20px] text-[10px] leading-[20px] text-white text-center pb-2">
+                EVH Medical Technology © Bảng Quyền thuộc sở hữu của EVH
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+
+</html>

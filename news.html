@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/taildwind.js"></script>
+</head>
+
+<body>
+    <section class="menu container flex items-center md:max-w-none">
+        <img loading="lazy" src="images/logo.png" alt="logo evh" class="w-[67px] md:w-[41px]" />
+        <span class="text-menu text-[50px] font-bold ml-[10px] cursor-pointer md:hidden">EVH</span>
+        <div class="space-x-[37px] text-menu font-semibold text-lg ml-[153px] md:hidden">
+            <a href="index.html">Trang Chủ</a>
+            <a href="#service">Dịch Vụ</a>
+            <a href="#team">Đội ngũ</a>
+            <a href="#news">Tin Tức</a>
+            <a href="#recruiting">Tuyển dụng</a>
+        </div>
+        <div
+            class="btn w-[184px] h-[55px] bg-menu text-white rounded-[72px] flex items-center justify-center ml-auto md:hidden">
+            <img loading="lazy" src="images/download.png" alt="icon download" />
+            <span class="pl-2">Download</span>
+        </div>
+
+        <!-- mobile menu -->
+        <div
+            class="w-[35px] h-[35px] bg-black p-2 space-y-1 flex justify-center flex-col ml-auto invisible md:visible menu-bugger">
+            <div class="bg-white h-0.5 w-full"></div>
+            <div class="bg-white h-0.5 w-full"></div>
+            <div class="bg-white h-0.5 w-full"></div>
+        </div>
+
+        <div class="hidden menu-mobile">
+            <div class="icon menu-item-mb">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.25 14.75L23.875 6.875L22.625 5.625L15 13.375L7.375 5.625L6.125 6.875L13.75 14.75L5.625 23.125L6.875 24.375L15 16.125L23.125 24.375L24.375 23.125L16.25 14.75Z"
+                        fill="black" />
+                </svg>
+            </div>
+
+            <a href="index.html" class="menu-item-mb">Trang Chủ</a>
+            <a href="#service" class="menu-item-mb">Dịch Vụ</a>
+            <a href="#team" class="menu-item-mb">Đội ngũ</a>
+            <a href="#news" class="menu-item-mb">Tin Tức</a>
+            <a href="#recruiting" class="menu-item-mb">Tuyển dụng</a>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section class="mt-[55px] pl-[150px] pt-[147px] text-white relative container banner md:px-[31px] md:pt-[33px]">
+        <div class="max-w-[462px] md:max-w-none">
+            <span class="text-[46px] leading-[64px] font-semibold md:text-[36px] md:leading-[50px]">Đặt Lịch Hẹn Khám
+                bệnh Nhanh Chóng
+            </span>
+            <p class="mt-[17px] text-xl leading-[30px] md:text-sm">
+                EVH là một ứng dụng về chăm sóc sức khỏe bao gồm: Đặt lịch hẹn, tìm kiếm phòng khám, cập nhật tin tức
+                mới nhất về y tế…
+                ngay trên thiết bị di động.
+                <br />
+                Giúp người bệnh dễ dàng tìm được cơ sở khám chữa bệnh.
+            </p>
+        </div>
+        <div class="mt-[26px] md:hidden">
+            <span class="text-xl font-semibold"> Tải Ứng Dụng Tại Đây </span>
+            <div class="space-x-[13px] mt-[17px] flex cursor-pointer">
+                <img src="images/appstore.png" alt="" />
+                <img src="images/gg-play.png" alt="" />
+            </div>
+        </div>
+        <div class="mt-[181px] space-y-[15px] hidden md:block">
+            <div class="action text-[10px] px-0.5 py-1 border border-solid border-[#0E43A6] rounded-md w-fit">D O W N L
+                O A D</div>
+            <img src="images/appstore.png" alt="" class="w-[119px]" />
+            <img src="images/gg-play.png" alt="" class="w-[119px]" />
+        </div>
+        <img src="images/mockup-phone.png" alt="mockup phone" class="absolute bottom-0 right-[105px] md:hidden" />
+        <img src="images/mockup-phone-mb.png" alt="mockup phone" class="absolute bottom-0 right-0 hidden md:block" />
+    </section>
+
+    <section class="mt-[100px] container news-view md:mt-[50px]">
+        <div class="grid grid-cols-3 gap-6 md:grid-cols-1">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-[170px] relative footer">
+        <div class="inner">
+            <div class="contact">
+                <span class="text-white text-[40px] font-semibold md:hidden">Liên Hệ Chúng tôi</span>
+                <input v-model="text" type="text" class="input" placeholder="Enter your email" />
+                <div
+                    class="ml-auto uppercase text-white text-[18px] flex items-center justify-center cursor-pointer btn">
+                    Subscribe</div>
+            </div>
+            <div class="content flex md:hidden">
+                <div class="left flex flex-col items-center [h-253px] pr-[72px] border-r border-solid border-[#C4C4C4]">
+                    <img loading="lazy" src="images/logo.png" alt="" class="logo" />
+                    <img loading="lazy" src="images/company-name.png" alt="" class="block mt-[35px]" />
+                    <div class="flex items-center justify-between space-x-[27px] mt-4">
+                        <img loading="lazy" src="images/Insta.png" alt="" />
+                        <img loading="lazy" src="images/Fb.png" alt="" />
+                        <img loading="lazy" src="images/Twiter.png" alt="" />
+                        <img loading="lazy" src="images/In.png" alt="" />
+                        <img loading="lazy" src="images/Youtube.png" alt="" />
+                    </div>
+                </div>
+                <div class="pl-5 flex-1">
+                    <span class="text-menu font-medium text-[30px]">Menu</span>
+                    <div class="flex mt-2">
+                        <ul class="text-xl leading-[40px]">
+                            <li>Trang Chủ</li>
+                            <li>Dịch Vụ</li>
+                            <li>Đội Ngũ</li>
+                            <li>Tin Tức</li>
+                            <li>Tuyển Dụng <span
+                                    class="text-base px-3 bg-[#39AFBA] rounded-[15px] text-white">Offer</span></li>
+                        </ul>
+                        <ul class="ml-[29px] text-xl leading-[40px]">
+                            <li>Liên hệ</li>
+                            <li>Điều khoản dịch vụ</li>
+                            <li>Chính sách bảo mật</li>
+                            <li>Quy định sử dụng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pl-[57px] w-[331px]">
+                    <span class="text-menu font-medium text-[30px]">Address</span>
+                    <p class="text-xl leading-[40px]">
+                        Tầng 10, Tòa nhà Việt Á, Số 9 Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội
+                    </p>
+                    <p class="text-xl leading-[40px]">hotline: 1900 955535</p>
+                    <p class="text-xl leading-[40px]">mail@primpay.com</p>
+                </div>
+            </div>
+            <div class="mt-[26px] flex justify-end space-x-[42px] md:hidden">
+                <img loading="lazy" src="images/appstore.png" alt="" />
+                <img loading="lazy" src="images/gg-play.png" alt="" />
+            </div>
+        </div>
+        <div class="h-[77px] bg-white flex items-center justify-center md:hidden">
+            EVH Medical Technology © Bảng Quyền thuộc sở hữu của EVH
+        </div>
+
+        <!-- footer mb -->
+        <div class="pt-[100px] text-white pl-[31px] pr-[38px] hidden md:block">
+            <span class="text-2xl leading-3 font-semibold">Menu</span>
+            <div class="mt-1">
+                <ul class="text-base leading-[32px]">
+                    <li>Trang Chủ</li>
+                    <li>Dịch Vụ</li>
+                    <li>Đội Ngũ</li>
+                    <li>Tin Tức</li>
+                    <li>Tuyển Dụng <span class="text-sm px-3 bg-[#39AFBA] rounded-[15px] text-white">Offer</span></li>
+                </ul>
+                <ul class="base leading-[32px] mt-4">
+                    <li>Liên hệ</li>
+                    <li>Điều khoản dịch vụ</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Quy định sử dụng</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <span class="text-2xl leading-3 font-semibold">Address</span>
+                <div class="mt-1">
+                    <p class="text-base leading-8">
+                        Tầng 10, Tòa nhà Việt Á, Số 9 Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội
+                        <br />
+                        Hotline: 1900 955535
+                        <br />
+                        mail@primpay.com
+                    </p>
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center items-center space-x-[50px]">
+                <img loading="lazy" src="images/appstore.png" alt="" class="w-[120px]" />
+                <img loading="lazy" src="images/gg-play.png" alt="" class="w-[120px]" />
+            </div>
+            <div class="mt-10 flex flex-col justify-center items-center">
+                <img loading="lazy" src="images/logo.png" alt="" class="w-[65px]" />
+                <img loading="lazy" src="images/company-name-mb.png" alt="" class="block mt-[18px]" />
+                <div class="flex items-center justify-between space-x-[14px] mt-3">
+                    <img loading="lazy" src="images/Insta-mb.png" alt="" />
+                    <img loading="lazy" src="images/Fb-mb.png" alt="" />
+                    <img loading="lazy" src="images/Twiter-mb.png" alt="" />
+                    <img loading="lazy" src="images/In-mb.png" alt="" />
+                    <img loading="lazy" src="images/Youtube-mb.png" alt="" />
+                </div>
+            </div>
+            <div class="mt-[20px] text-[10px] leading-[20px] text-white text-center pb-2">
+                EVH Medical Technology © Bảng Quyền thuộc sở hữu của EVH
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        for (let index = 0; index < 20; index++) {
+            const elmRoot = document.querySelector('.grid')
+            const item = `     <a class="col shadow-xl cursor-pointer" href="detailNews.html">
+                <img loading="lazy"
+                    src="https://icdn.24h.com.vn/upload/3-2023/images/2023-09-25/TPHCM-Thao-do-can-nha-4-mat-tien-doc-nhat-o-quan-Tan-Phu-1-1695631867-227-width2000height1339.jpg"
+                    alt="" class="block object-cover h-[243px] w-full" />
+                <div class="p-3">
+                    <p class="text-lg font-semibold text-menu line-clamp-2">
+                        Hà Nội thêm 2 ca tử vong do sốt xuất huyết, số mắc vẫn tăng
+                    </p>
+                    <p class="my-[10px] text-[13px]">20/2/2022</p>
+                    <p class="line-clamp-3 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Laoreet non curabitur
+                        gravida sagittis aliquam bibendum
+                    </p>
+                </div>
+            </a>`
+
+            elmRoot.insertAdjacentHTML('beforeend', item)
+        }
+    </script>
+</body>
+
+</html>
